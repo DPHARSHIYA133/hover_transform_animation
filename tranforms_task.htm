@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>tranform-task</title>
+    <style> 
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+            position: relative;
+        }
+        .class{
+            height:100px;
+            margin:10px;
+            width:100px;
+            position:absolute;
+            transition: transform 0.5s ease;
+        }
+        .o{
+            background-color: blue;
+        }
+        .t{
+            background-color: aqua;
+        }
+        .th{
+            background-color: blueviolet;
+        }
+        .f{
+            background-color: brown;
+        }
+        .fi{
+            background-color: black;
+        }
+
+        .container:hover .t{
+            transform: translatey(200px)  rotate(360deg);
+        }
+        .container:hover .th {
+            transform: translatey(-200px)rotate(360deg);
+        }
+        .container:hover .f {
+            transform: translatex(-200px) rotate(360deg);
+        }
+        .container:hover .fi {
+
+            transform: translatex(200px) rotate(360deg) ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="class o">1</div>
+        <div class="class t">2</div>
+        <div class="class th">3</div>
+        <div class="class f">4</div>
+        <div class="class fi">5</div>
+    </div>
+</body>
+</html>
